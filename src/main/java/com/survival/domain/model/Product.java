@@ -2,11 +2,6 @@ package com.survival.domain.model;
 
 import java.util.Objects;
 
-//1. 무지성 private 맴버 변수
-//2. 필요하면 생성자 추가
-//3. 무지성 getter / setter
-//4. 무지성 toString()
-//5. 필요하면 equals / hashCode 재정의 (오버라이드)
 
 public class Product {
 	public static void main(String[] args) {
@@ -16,12 +11,7 @@ public class Product {
 		Product product2 = new Product("33", "33", 11);
 		System.out.println(product2);
 
-		// == : 주소비교, hasCode()가 같아야한다. 내용이 같더라도 다를 수 있다.
-		// equals : Object 로 받아와서 비교, 모든 클래스는 Object(타입을 가리지 않음)를 상속받는다.(extends),
-		// Object object = new Product("33", "33", 11); 도 가능하다.
-		// product.equals(product2); // true - 재정의함
-		// product.hashCode() == product2.hashCode(); //true 재정의
-		// product == product2 // false
+
 	}
 
 	private String id;
@@ -33,7 +23,7 @@ public class Product {
 	private long unitsInStock;
 	private String condition;
 
-	// overload - 똑같은 이름의 메소드를 인자만 다르게해서 받음 / override 재정의
+
 	public Product(String id, String name, int unitprice) {
 		this.id = id;
 		this.name = name;

@@ -1,7 +1,7 @@
 <%@page import="com.survival.domain.model.Product"%>
-<%@page import="com.survival.data.ProductRepository"%>
+<%@page import="com.survival.domain.repository.ProductRepository"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%
 //한글처리
 request.setCharacterEncoding("UTF-8");

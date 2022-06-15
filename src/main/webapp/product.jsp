@@ -1,4 +1,4 @@
-<%@page import="com.survival.data.ProductRepository"%>
+<%@page import="com.survival.domain.repository.ProductRepository"%>
 <%@page import="com.survival.domain.model.Product"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
